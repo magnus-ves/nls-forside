@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #f4f7fa; }
+  * { box-sizing: border-box; }
+  body { -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: inherit; }
+  @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes swell { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+</style>
+</helmet>
+<div style="font-family: Archivo, Helvetica, sans-serif; color: #002b45; background: #f4f7fa; overflow-x: hidden;">
+
+  <div style="background: #002b45; color: #c9dcea; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.04em; padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 32px; display: flex; gap: 24px; justify-content: space-between; align-items: center;">
+      <span style="display: flex; align-items: center; gap: 10px;"><span style="width: 7px; height: 7px; border-radius: 99px; background: {{ accent }};"></span>NØDNUMMER 113 · SJØ OG VANN 120</span>
+      <span style="display: flex; gap: 24px; align-items: center;"><a href="#stott" style="border-bottom: 1px solid rgba(255,255,255,0.35);">Støtt oss</a><a href="#" style="border-bottom: 1px solid rgba(255,255,255,0.35);">Bli medlem</a><a href="#">EN</a></span>
+    </div>
+  </div>
+
+  <header style="position: sticky; top: 0; z-index: 50; background: rgba(244,247,250,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(0,43,69,0.12);">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 14px 32px; display: flex; align-items: center; gap: 40px;">
+      <a href="#" style="display: flex; align-items: center; gap: 12px; flex: none;">
+        <img src="https://static.wixstatic.com/media/c68629_5278ddd3acd14657bb720ab775a6f65f~mv2.png/v1/fill/w_68,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c68629_5278ddd3acd14657bb720ab775a6f65f~mv2.png" alt="Norges Livredningsselskap" style="width: 38px; height: 38px; object-fit: contain;" />
+        <span style="display: grid; gap: 1px;">
+          <span style="font-weight: 800; font-size: 15px; letter-spacing: -0.015em; line-height: 1;">Norges Livredningsselskap</span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.1em; color: #64798c;">STIFTET 1906</span>
+        </span>
+      </a>
+      <nav style="display: flex; gap: clamp(12px, 1.7vw, 26px); margin-left: auto; font-size: 14.5px; font-weight: 600; align-items: center; white-space: nowrap; min-width: 0; overflow: hidden;">
+        <a href="#utdanning" style="padding: 6px 0; border-bottom: 2px solid transparent;" style-hover="border-bottom: 2px solid #002b45;">Utdanning</a>
+        <a href="#kalender" style="padding: 6px 0; border-bottom: 2px solid transparent;" style-hover="border-bottom: 2px solid #002b45;">Kurs</a>
+        <a href="#tips" style="padding: 6px 0; border-bottom: 2px solid transparent;" style-hover="border-bottom: 2px solid #002b45;">Tips og råd</a>
+        <a href="#aktuelt" style="padding: 6px 0; border-bottom: 2px solid transparent;" style-hover="border-bottom: 2px solid #002b45;">Aktuelt</a>
+        <a href="#om" style="padding: 6px 0; border-bottom: 2px solid transparent;" style-hover="border-bottom: 2px solid #002b45;">Om NLS</a>
+        <a href="#" style="padding: 6px 0; border-bottom: 2px solid transparent;" style-hover="border-bottom: 2px solid #002b45;">Nettbutikk</a>
+      </nav>
+      <a href="#kalender" style="flex: none; background: #002b45; color: #f4f7fa; font-size: 14px; font-weight: 700; padding: 12px 20px; border-radius: 2px;" style-hover="background: #0f4c6b;">Finn kurs</a>
+    </div>
+  </header>
+
+  <section style="position: relative; background: #001726; color: #f4f7fa; overflow: hidden;">
+    <img src="https://static.wixstatic.com/media/c68629_10e5f023b0aa488d85ab4a0a5a03d972~mv2.png/v1/fill/w_822,h_465,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c68629_10e5f023b0aa488d85ab4a0a5a03d972~mv2.png" alt="Strandlivreddere i tjeneste" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5; filter: saturate(0.85);" />
+    <div style="position: absolute; inset: 0; background: linear-gradient(105deg, rgba(0,23,38,0.94) 0%, rgba(0,23,38,0.78) 45%, rgba(0,23,38,0.25) 100%);"></div>
+    <div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 96px 32px 0; display: grid; gap: 56px;">
+      <div style="max-width: 880px; display: grid; gap: 28px; animation: rise 0.7s ease both;">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.14em; color: {{ accent }};">DRUKNING ER DEN NEST HYPPIGSTE ULYKKESDØDSÅRSAKEN BLANT BARN</span>
+        <h1 style="margin: 0; font-size: clamp(46px, 6.2vw, 92px); line-height: 0.95; letter-spacing: -0.035em; font-weight: 800; text-wrap: balance;">Vi lærer alle å ferdes trygt i, på og ved vann.</h1>
+        <p style="margin: 0; max-width: 560px; font-size: 19px; line-height: 1.55; color: #c6dae9; text-wrap: pretty;">Kurs, utdanning og livreddende kunnskap gjennom klubber og kretser i hele Norge — fra babysvømming til badevaktutdanning.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; padding-top: 4px;">
+          <a href="#kalender" style="background: {{ accent }}; color: #ffffff; font-weight: 700; font-size: 16px; padding: 16px 26px; border-radius: 2px;" style-hover="filter: brightness(1.08);">Utdanningskalender</a>
+          <a href="#tips" style="border: 1px solid rgba(244,247,250,0.4); color: #f4f7fa; font-weight: 700; font-size: 16px; padding: 16px 26px; border-radius: 2px;" style-hover="background: rgba(244,247,250,0.12);">Lær å redde liv i vann</a>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(244,247,250,0.2);">
+        <sc-for list="{{ heroFacts }}" as="f" hint-placeholder-count="4">
+          <div style="padding: 26px 24px 30px 0; display: grid; gap: 6px; border-right: 1px solid rgba(244,247,250,0.14);">
+            <span style="font-family: 'Archivo Narrow', Archivo, sans-serif; font-size: 40px; font-weight: 700; letter-spacing: -0.02em; line-height: 1;">{{ f.n }}</span>
+            <span style="font-size: 13.5px; color: #93afc4; line-height: 1.4;">{{ f.label }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="utdanning" style="max-width: 1280px; margin: 0 auto; padding: 96px 32px 32px;">
+    <div style="display: flex; align-items: end; justify-content: space-between; gap: 32px; flex-wrap: wrap; padding-bottom: 36px;">
+      <div style="display: grid; gap: 14px; max-width: 620px;">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #64798c;">01 — HVOR VIL DU BEGYNNE?</span>
+        <h2 style="margin: 0; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.04; letter-spacing: -0.03em; font-weight: 800;">Tre veier inn i livredning</h2>
+      </div>
+      <a href="#" style="font-weight: 700; font-size: 15px; border-bottom: 2px solid {{ accent }}; padding-bottom: 3px;">Se alle utdanninger</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+      <sc-for list="{{ paths }}" as="p" hint-placeholder-count="3">
+        <a href="#kalender" style="display: grid; grid-template-rows: 200px auto; background: #fff; border: 1px solid rgba(0,43,69,0.1); border-radius: 3px; overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-4px); box-shadow: 0 18px 40px -20px rgba(0,43,69,0.4);">
+          <div style="position: relative; background: #002b45; overflow: hidden;">
+            <img src="{{ p.img }}" alt="{{ p.title }}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.9;" />
+            <span style="position: absolute; left: 0; bottom: 0; background: {{ accent }}; color: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; padding: 7px 12px;">{{ p.tag }}</span>
+          </div>
+          <div style="padding: 26px 26px 30px; display: grid; gap: 10px;">
+            <h3 style="margin: 0; font-size: 24px; letter-spacing: -0.02em; font-weight: 700; line-height: 1.1;">{{ p.title }}</h3>
+            <p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #47606f; text-wrap: pretty;">{{ p.body }}</p>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; color: #64798c; padding-top: 6px;">{{ p.meta }}</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="kalender" style="max-width: 1280px; margin: 0 auto; padding: 64px 32px 96px;">
+    <div style="background: #fff; border: 1px solid rgba(0,43,69,0.1); border-radius: 3px;">
+      <div style="padding: 30px 32px; display: flex; gap: 24px; align-items: center; justify-content: space-between; flex-wrap: wrap; border-bottom: 1px solid rgba(0,43,69,0.1);">
+        <div style="display: grid; gap: 6px;">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #64798c;">02 — UTDANNINGSKALENDER</span>
+          <h2 style="margin: 0; font-size: 30px; letter-spacing: -0.028em; font-weight: 800;">Kommende kurs og seminarer</h2>
+        </div>
+        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+          <sc-for list="{{ filters }}" as="ft" hint-placeholder-count="4">
+            <button type="button" onClick="{{ ft.onClick }}" style="{{ ft.style }}">{{ ft.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display: grid;">
+        <sc-for list="{{ visibleCourses }}" as="c" hint-placeholder-count="4">
+          <div style="display: grid; grid-template-columns: 108px 1fr auto auto; gap: 24px; align-items: center; padding: 22px 32px; border-bottom: 1px solid rgba(0,43,69,0.08);" style-hover="background: #f7fafc;">
+            <div style="display: grid; gap: 2px; border-left: 3px solid {{ accent }}; padding-left: 14px;">
+              <span style="font-family: 'Archivo Narrow', Archivo, sans-serif; font-size: 26px; font-weight: 700; line-height: 1;">{{ c.day }}</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #64798c;">{{ c.month }}</span>
+            </div>
+            <div style="display: grid; gap: 4px;">
+              <span style="font-size: 18px; font-weight: 700; letter-spacing: -0.015em;">{{ c.title }}</span>
+              <span style="font-size: 14px; color: #47606f;">{{ c.place }}</span>
+            </div>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; color: #0f4c6b; background: rgba(0,43,69,0.06); padding: 6px 10px; border-radius: 2px;">{{ c.cat }}</span>
+            <a href="#" style="font-weight: 700; font-size: 14.5px; border: 1px solid rgba(0,43,69,0.25); padding: 11px 18px; border-radius: 2px; white-space: nowrap;" style-hover="background: #002b45; color: #f4f7fa; border-color: #002b45;">Meld deg på</a>
+          </div>
+        </sc-for>
+      </div>
+      <div style="padding: 20px 32px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 14.5px; color: #47606f;">
+        <span>Kursene arrangeres av klubber og kretser i hele landet.</span>
+        <a href="#" style="font-weight: 700; color: #002b45; border-bottom: 2px solid {{ accent }}; padding-bottom: 2px;">Hele kalenderen</a>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showStats }}" hint-placeholder-val="{{ true }}">
+    <section style="background: #002b45; color: #f4f7fa;">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 88px 32px;">
+        <div style="display: flex; align-items: end; justify-content: space-between; gap: 32px; flex-wrap: wrap; padding-bottom: 44px;">
+          <h2 style="margin: 0; font-size: clamp(30px, 3.2vw, 44px); letter-spacing: -0.03em; font-weight: 800; line-height: 1.05;">Sesongen 2025, i tall</h2>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #7c9ab2;">STRANDTJENESTEN · OSLO</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: rgba(244,247,250,0.16);">
+          <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+            <div style="background: #002b45; padding: 32px 28px; display: grid; gap: 16px;">
+              <img src="{{ s.img }}" alt="" style="width: 52px; height: 52px; border-radius: 99px; object-fit: cover; filter: saturate(0.9);" />
+              <span style="font-family: 'Archivo Narrow', Archivo, sans-serif; font-size: clamp(46px, 5vw, 68px); font-weight: 700; line-height: 0.9; letter-spacing: -0.03em;">{{ s.n }}</span>
+              <span style="display: grid; gap: 3px;">
+                <span style="font-size: 16px; font-weight: 700;">{{ s.title }}</span>
+                <span style="font-size: 14.5px; color: #93afc4;">{{ s.sub }}</span>
+              </span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <section id="tips" style="max-width: 1280px; margin: 0 auto; padding: 96px 32px;">
+    <div style="display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: 56px; align-items: start;">
+      <div style="display: grid; gap: 16px; position: sticky; top: 96px;">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #64798c;">03 — TIPS OG RÅD</span>
+        <h2 style="margin: 0; font-size: clamp(30px, 3.2vw, 44px); letter-spacing: -0.03em; font-weight: 800; line-height: 1.05;">Fire ting som redder liv</h2>
+        <p style="margin: 0; font-size: 16.5px; line-height: 1.6; color: #47606f; text-wrap: pretty;">Kunnskapen under tar ett minutt å lese. Den er verdt et helt liv.</p>
+        <a href="#" style="justify-self: start; margin-top: 8px; font-weight: 700; font-size: 15px; border-bottom: 2px solid {{ accent }}; padding-bottom: 3px;">Alle råd og ressurser</a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        <sc-for list="{{ tips }}" as="t" hint-placeholder-count="4">
+          <div style="background: #fff; border: 1px solid rgba(0,43,69,0.1); border-radius: 3px; padding: 28px; display: grid; gap: 12px; align-content: start;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; color: {{ accent }};">{{ t.no }}</span>
+            <h3 style="margin: 0; font-size: 21px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15;">{{ t.title }}</h3>
+            <p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #47606f; text-wrap: pretty;">{{ t.body }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="aktuelt" style="background: #e4ebf1; border-top: 1px solid rgba(0,43,69,0.1);">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 88px 32px;">
+      <div style="display: flex; align-items: end; justify-content: space-between; gap: 32px; flex-wrap: wrap; padding-bottom: 36px;">
+        <div style="display: grid; gap: 14px;">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #64798c;">04 — AKTUELT</span>
+          <h2 style="margin: 0; font-size: clamp(30px, 3.2vw, 44px); letter-spacing: -0.03em; font-weight: 800; line-height: 1.05;">Fra Norges Livredningsselskap</h2>
+        </div>
+        <a href="#" style="font-weight: 700; font-size: 15px; border-bottom: 2px solid {{ accent }}; padding-bottom: 3px;">Se flere aktualiteter</a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <sc-for list="{{ news }}" as="n" hint-placeholder-count="3">
+          <a href="{{ n.href }}" style="display: grid; grid-template-rows: 190px auto; background: #fff; border: 1px solid rgba(0,43,69,0.1); border-radius: 3px; overflow: hidden;" style-hover="box-shadow: 0 18px 40px -22px rgba(0,43,69,0.45);">
+            <div style="position: relative; overflow: hidden; background: #002b45;">
+              <img src="{{ n.img }}" alt="{{ n.title }}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div style="padding: 24px 26px 28px; display: grid; gap: 10px; align-content: start;">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; color: #64798c;">{{ n.date }}</span>
+              <h3 style="margin: 0; font-size: 21px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15;">{{ n.title }}</h3>
+              <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #47606f; text-wrap: pretty;">{{ n.body }}</p>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="stott" style="background: #0f4c6b; color: #f4f7fa;">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 88px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: center;">
+      <div style="display: grid; gap: 20px; max-width: 560px;">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: {{ accent }};">05 — STØTT OSS</span>
+        <h2 style="margin: 0; font-size: clamp(32px, 3.6vw, 50px); letter-spacing: -0.032em; font-weight: 800; line-height: 1.03;">Din gave blir svømmetak, isvett og badevakter.</h2>
+        <p style="margin: 0; font-size: 17.5px; line-height: 1.6; color: #c9dcea; text-wrap: pretty;">Det er ikke ofte man får muligheten til å være en hjelpende hånd når livet står på spill. Sammen med Norges Livredningsselskap kan du redde liv.</p>
+      </div>
+      <div style="background: rgba(0,23,38,0.45); border: 1px solid rgba(244,247,250,0.18); border-radius: 3px; padding: 32px; display: grid; gap: 18px;">
+        <span style="font-size: 15px; font-weight: 700; color: #c9dcea;">Velg beløp</span>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;">
+          <sc-for list="{{ amounts }}" as="a" hint-placeholder-count="4">
+            <button type="button" onClick="{{ a.onClick }}" style="{{ a.style }}">{{ a.label }}</button>
+          </sc-for>
+        </div>
+        <span style="font-size: 15px; line-height: 1.5; color: #c9dcea;">{{ giftLine }}</span>
+        <a href="#" style="background: {{ accent }}; color: #ffffff; font-weight: 700; font-size: 16px; padding: 16px; text-align: center; border-radius: 2px;" style-hover="filter: brightness(1.08);">Gi din gave</a>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; color: #93afc4;">VIPPS · KORT · AVTALEGIRO</span>
+      </div>
+    </div>
+  </section>
+
+  <footer id="om" style="background: #001726; color: #c9dcea;">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 72px 32px 40px; display: flex; flex-wrap: wrap; gap: 48px;">
+      <div style="display: grid; gap: 16px; align-content: start; flex: 1 1 280px;">
+        <img src="https://static.wixstatic.com/media/c68629_5278ddd3acd14657bb720ab775a6f65f~mv2.png/v1/fill/w_68,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c68629_5278ddd3acd14657bb720ab775a6f65f~mv2.png" alt="" style="width: 48px; height: 48px; object-fit: contain;" />
+        <span style="font-size: 18px; font-weight: 800; color: #f4f7fa; letter-spacing: -0.02em;">Norges Livredningsselskap</span>
+        <span style="font-size: 15px; line-height: 1.55;">Vi lærer alle å ferdes trygt i, på og ved vann.</span>
+        <div style="display: flex; gap: 10px; padding-top: 6px;">
+          <a href="https://www.facebook.com/norgeslivredningsselskap/" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; border: 1px solid rgba(244,247,250,0.28); padding: 8px 12px; border-radius: 2px;" style-hover="background: rgba(244,247,250,0.12);">FB</a>
+          <a href="https://www.instagram.com/norgeslivredningsselskap/" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; border: 1px solid rgba(244,247,250,0.28); padding: 8px 12px; border-radius: 2px;" style-hover="background: rgba(244,247,250,0.12);">IG</a>
+          <a href="https://www.youtube.com/channel/UCrJ9Nnmt-geTGgbTjWLXfXg" style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; border: 1px solid rgba(244,247,250,0.28); padding: 8px 12px; border-radius: 2px;" style-hover="background: rgba(244,247,250,0.12);">YT</a>
+        </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 48px; flex: 1 1 460px;">
+      <sc-for list="{{ footerCols }}" as="col" hint-placeholder-count="3">
+        <div style="display: grid; gap: 12px; align-content: start; flex: 1 1 150px;">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.12em; color: #7c9ab2;">{{ col.head }}</span>
+          <sc-for list="{{ col.items }}" as="it" hint-placeholder-count="4">
+            <a href="#" style="font-size: 15px;" style-hover="color: #fff;">{{ it }}</a>
+          </sc-for>
+        </div>
+      </sc-for>
+      </div>
+    </div>
+    <div style="border-top: 1px solid rgba(244,247,250,0.14);">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 20px 32px; display: flex; gap: 24px; justify-content: space-between; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; color: #7c9ab2;">
+        <span>© 2026 NORGES LIVREDNINGSSELSKAP · ORG.NR 971 254 456</span>
+        <span>PERSONVERN · TILGJENGELIGHET</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#e2372f&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#ff6a2b&quot;,&quot;#f2b705&quot;,&quot;#4ec3d9&quot;,&quot;#e2372f&quot;]},&quot;showStats&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Innhold&quot;}}">
+class Component extends DCLogic {
+  state = { filter: "Alle", amount: 500 };
+
+  renderVals() {
+    const accent = this.props.accent ?? "#e2372f";
+    const courses = [
+      { day: "08", month: "FEB", title: "Isvettdag på Kadettangen", place: "Sandvika, Bærum", cat: "Åpent arrangement" },
+      { day: "14", month: "MAR", title: "Grunnkurs livredning i basseng", place: "Klubber over hele landet", cat: "Kurs" },
+      { day: "25", month: "APR", title: "Badevaktutdanning — modul 1", place: "Oslo", cat: "Utdanning" },
+      { day: "11", month: "SEP", title: "Lærerseminar i utendørs svømme- og livredningsopplæring", place: "Fornebu", cat: "For lærere" },
+      { day: "03", month: "OKT", title: "Instruktørkurs babysvømming", place: "Bergen", cat: "Utdanning" }
+    ];
+    const cats = ["Alle", "Kurs", "Utdanning", "For lærere"];
+    const btn = (active) => `font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;padding:9px 13px;border-radius:2px;cursor:pointer;border:1px solid ${active ? "#002b45" : "rgba(0,43,69,0.22)"};background:${active ? "#002b45" : "transparent"};color:${active ? "#f4f7fa" : "#0f4c6b"};`;
+
+    return {
+      accent,
+      showStats: this.props.showStats ?? true,
+      heroFacts: [
+        { n: "1906", label: "Året vi ble stiftet" },
+        { n: "4 505", label: "Hendelser registrert i sommer" },
+        { n: "45", label: "Strandlivreddere i tjeneste" },
+        { n: "10", label: "Reddet fra drukningsfare" }
+      ],
+      paths: [
+        { tag: "FOR ALLE", title: "Lær å berge deg selv", body: "Selvberging, kaldt vann og isvett — korte kurs for voksne og barn i klubben nærmest deg.", meta: "KURS FRA 1 KVELD", img: "https://static.wixstatic.com/media/c96f10_15f08132b04d43f495622f47e39b7fae~mv2.jpg/v1/fill/w_752,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c96f10_15f08132b04d43f495622f47e39b7fae~mv2.jpg" },
+        { tag: "YRKESVEI", title: "Bli badevakt eller strandlivredder", body: "Godkjent badevaktutdanning og strandtjeneste — kompetansen bassenger og kommuner etterspør.", meta: "UTDANNING · SERTIFISERING", img: "https://static.wixstatic.com/media/c68629_10e5f023b0aa488d85ab4a0a5a03d972~mv2.png/v1/fill/w_822,h_465,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c68629_10e5f023b0aa488d85ab4a0a5a03d972~mv2.png" },
+        { tag: "SKOLE", title: "For lærere og skoler", body: "Lek, oppdagende læring og vannkompetanse ute — seminarer og opplegg til svømmeundervisningen.", meta: "SEMINAR · RESSURSER", img: "https://static.wixstatic.com/media/c96f10_ffe9deb3e5ea4a2d9b7d7efb18dee41d~mv2.jpg/v1/fill/w_255,h_192,fp_0.50_0.50,q_90,enc_avif,quality_auto/c96f10_ffe9deb3e5ea4a2d9b7d7efb18dee41d~mv2.webp" }
+      ],
+      filters: cats.map((c) => ({
+        label: c,
+        style: btn(this.state.filter === c),
+        onClick: () => this.setState({ filter: c })
+      })),
+      visibleCourses: this.state.filter === "Alle" ? courses : courses.filter((c) => c.cat === this.state.filter),
+      stats: [
+        { n: "45", title: "Strandlivreddere", sub: "voktet strendene", img: "https://static.wixstatic.com/media/c96f10_655e36bb64814bc786a1613e6b958cdc~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_166,h_166,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4009_JPG.jpg" },
+        { n: "5", title: "Strender", sub: "bemannet i Oslo", img: "https://static.wixstatic.com/media/e66b67_745ef9ec95c9451c89bdd0dac6b2f7c8~mv2_d_3264_2448_s_4_2.jpeg/v1/fill/w_166,h_166,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e66b67_745ef9ec95c9451c89bdd0dac6b2f7c8~mv2_d_3264_2448_s_4_2.jpeg" },
+        { n: "10", title: "Personer", sub: "reddet fra drukningsfare", img: "https://static.wixstatic.com/media/e66b67_691aa91bb39843d0aedeb5f322452f39~mv2.jpeg/v1/fill/w_166,h_166,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e66b67_691aa91bb39843d0aedeb5f322452f39~mv2.jpeg" },
+        { n: "4 505", title: "Hendelser", sub: "registrert i sommer", img: "https://static.wixstatic.com/media/e66b67_b54157f6ad9348f48becd5a32379e9a0~mv2_d_1920_2880_s_2.jpg/v1/fill/w_166,h_166,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e66b67_b54157f6ad9348f48becd5a32379e9a0~mv2_d_1920_2880_s_2.jpg" }
+      ],
+      tips: [
+        { no: "01", title: "Kaldt vann tar pusten", body: "Fall i kaldt vann gir gisp og panikk de første minuttene. Hold deg i ro, flyt på ryggen, få kontroll på pusten før du svømmer." },
+        { no: "02", title: "Flytevest hele turen", body: "Vesten redder bare når den sitter på. Prøv den i vann, og sjekk at den passer barnets vekt før første tur." },
+        { no: "03", title: "Én voksen med blikket i vannet", body: "Drukning er stille. Avtal hvem som følger barna nå, og bytt tydelig når noen skal gjøre noe annet." },
+        { no: "04", title: "Nekt aldri isen respekt", body: "Isen er sjelden jevn. Kjenn deg fram med pigg, gå aldri alene, og ha kasteline og mobil tilgjengelig." }
+      ],
+      news: [
+        { date: "20. MAI", title: "Vi gjentar suksessen fra i fjor!", body: "Lærerseminar i utendørs svømme- og livredningsopplæring arrangeres på Fornebu 11. september 2026.", href: "https://www.livredning.no/post/vi-gjentar-suksessen-fra-i-fjor", img: "https://static.wixstatic.com/media/c96f10_ffe9deb3e5ea4a2d9b7d7efb18dee41d~mv2.jpg/v1/fill/w_255,h_192,fp_0.50_0.50,q_90,enc_avif,quality_auto/c96f10_ffe9deb3e5ea4a2d9b7d7efb18dee41d~mv2.webp" },
+        { date: "8. MAI", title: "– Ikkje tilstrekkeleg", body: "«Eg opplever at barna i kommunen vår ikkje har utesvømming før på ungdomsskulen», seier Stephanie Hjelmeland.", href: "https://www.livredning.no/post/ikkje-tilstrekkeleg", img: "https://static.wixstatic.com/media/c96f10_92addd44d1524097a002e612589f9b3e~mv2.jpg/v1/fill/w_256,h_192,fp_0.50_0.50,q_90,enc_avif,quality_auto/c96f10_92addd44d1524097a002e612589f9b3e~mv2.webp" },
+        { date: "2. FEB", title: "Isvettdag på Kadettangen 8. februar", body: "Bli med på en dag om is, kaldt vann og selvberging — for hele familien.", href: "https://www.livredning.no/post/isvettdag-p\u00e5-kadettangen-8-februar", img: "https://static.wixstatic.com/media/c96f10_df77c52840924e928167bee2441af92d~mv2.png/v1/fill/w_255,h_192,fp_0.50_0.50,q_95,enc_avif,quality_auto/c96f10_df77c52840924e928167bee2441af92d~mv2.webp" }
+      ],
+      amounts: [200, 500, 1000, 2500].map((v) => ({
+        label: v + " kr",
+        style: `font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.04em;padding:13px 6px;border-radius:2px;cursor:pointer;border:1px solid ${this.state.amount === v ? accent : "rgba(244,247,250,0.3)"};background:${this.state.amount === v ? accent : "transparent"};color:${this.state.amount === v ? "#ffffff" : "#f4f7fa"};`,
+        onClick: () => this.setState({ amount: v })
+      })),
+      giftLine: this.state.amount >= 1000
+        ? `${this.state.amount} kr dekker utstyr til en hel kursgruppe.`
+        : `${this.state.amount} kr gir livreddende opplæring til ${Math.max(1, Math.round(this.state.amount / 100))} barn.`,
+      footerCols: [
+        { head: "LÆR", items: ["Utdanning", "Kurs", "Tips og råd", "Godkjente instruktører"] },
+        { head: "ORGANISASJONEN", items: ["Om NLS", "Klubber og kretser", "Statistikk", "Hva er redningsdåd?"] },
+        { head: "BIDRA", items: ["Støtt oss", "Bli medlem", "Nettbutikk", "Kontakt oss"] }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>
