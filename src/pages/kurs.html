@@ -1,0 +1,56 @@
+<!--{"title": "Kurs og kalender", "description": "Finn livredningskurs, badevaktutdanning, lærerseminarer og åpne arrangementer i hele Norge.", "nav": "kurs", "crumbs": [["Kurs og kalender", "/kurs/"]]}-->
+  <section class="page-hero">
+    {{crumbs}}
+    <h1>Kurs og kalender</h1>
+    <p class="hero-lead">Livredningskurs, badevaktutdanning, lærerseminarer og åpne arrangementer — arrangert av klubber og kretser i hele landet.</p>
+  </section>
+
+  <section class="section section-first" data-reveal>
+    <div class="glass glass-shadow" data-courses data-all-cats data-show-past>
+      <div class="course-tools">
+        <label class="search">
+          <span class="visually-hidden">Søk i kurs</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input type="search" data-course-search placeholder="Søk etter kurs eller sted">
+        </label>
+        <label class="toggle"><input type="checkbox" data-course-past> Vis tidligere kurs</label>
+        <div class="chips-row">
+          <div class="chips" data-cat-filters role="group" aria-label="Kategori"></div>
+          <div class="chips chips-end" data-region-filters role="group" aria-label="Region"></div>
+        </div>
+      </div>
+      <div data-course-list aria-live="polite"></div>
+      <div class="empty" data-course-empty hidden>
+        <span>Ingen kurs passer søket ditt</span>
+        <button type="button" class="btn-reset" data-course-reset>Nullstill og vis alle</button>
+      </div>
+      <div class="course-foot">
+        <span data-course-result></span>
+        <a href="/kontakt/?emne=kurs">Spør om kurs →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-stack" data-reveal>
+    <div class="section-head">
+      <h2 class="h2-sm">Finner du ikke det du leter etter?</h2>
+      <p class="lead">Mange kurs settes opp lokalt av klubbene gjennom året. Vi hjelper deg å finne riktig tilbud.</p>
+    </div>
+    <div class="grid-3">
+      <a href="/klubber-og-kretser/" class="glass box">
+        <h3>Finn klubben nærmest deg</h3>
+        <p>Klubbene har ofte egne kurs og treninger som ikke står i kalenderen.</p>
+        <span class="card-more">Klubber og kretser →</span>
+      </a>
+      <a href="/kontakt/?emne=kurs" class="glass box">
+        <h3>Bestill kurs til gruppen</h3>
+        <p>Skole, barnehage, idrettslag eller arbeidsplass — vi setter dere i kontakt med en klubb.</p>
+        <span class="card-more">Send forespørsel →</span>
+      </a>
+      <a href="/utdanning/" class="glass box">
+        <h3>Usikker på nivå?</h3>
+        <p>Se utdanningsveiene og finn ut hvilket kurs som passer deg eller barna.</p>
+        <span class="card-more">Utdanning →</span>
+      </a>
+    </div>
+  </section>

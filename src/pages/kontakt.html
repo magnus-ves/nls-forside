@@ -1,0 +1,81 @@
+<!--{"title": "Kontakt oss", "description": "Ta kontakt med Norges Livredningsselskap om kurs, klubber, gaver, medlemskap eller presse.", "nav": "kontakt", "crumbs": [["Kontakt oss", "/kontakt/"]]}-->
+  <section class="page-hero">
+    {{crumbs}}
+    <h1>Kontakt oss</h1>
+    <p class="hero-lead">Spørsmål om kurs, klubber, gaver eller noe helt annet? Skriv til oss, så svarer vi så fort vi kan.</p>
+  </section>
+
+  <section class="section section-first" data-reveal>
+    <div class="doc">
+      <aside class="glass toc" aria-label="Ved akutt fare">
+        <span class="toc-head">VED AKUTT FARE</span>
+        <a href="tel:113"><strong>113</strong> · Medisinsk nødhjelp</a>
+        <a href="tel:120"><strong>120</strong> · Sjø og vann</a>
+        <a href="tel:112"><strong>112</strong> · Politi</a>
+        <span class="field-hint" style="padding: 8px 10px 0">Ring nødnummer — ikke send skjema — hvis noen er i fare.</span>
+      </aside>
+
+      <div class="glass glass-shadow doc-body">
+        <form class="form" data-contact-form novalidate>
+          <div class="form-row">
+            <label class="field">
+              <span class="field-label">Navn</span>
+              <input id="navn" name="navn" type="text" autocomplete="name" required aria-describedby="navn-error">
+              <span class="field-error" id="navn-error" aria-live="polite"></span>
+            </label>
+            <label class="field">
+              <span class="field-label">E-post</span>
+              <input id="epost" name="epost" type="email" autocomplete="email" required aria-describedby="epost-error">
+              <span class="field-error" id="epost-error" aria-live="polite"></span>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="field">
+              <span class="field-label">Telefon <span class="field-hint">(valgfritt)</span></span>
+              <input id="telefon" name="telefon" type="tel" autocomplete="tel">
+            </label>
+            <label class="field">
+              <span class="field-label">Hva gjelder det?</span>
+              <select id="emne" name="emne">
+                <option value="generelt">Generelt</option>
+                <option value="kurs">Kurs og påmelding</option>
+                <option value="klubb">Finn en klubb</option>
+                <option value="gave">Gave og støtte</option>
+                <option value="medlem">Medlemskap</option>
+                <option value="presse">Presse</option>
+                <option value="redningsdad">Redningsdåd</option>
+              </select>
+            </label>
+          </div>
+          <label class="field">
+            <span class="field-label">Melding</span>
+            <textarea id="melding" name="melding" rows="6" required aria-describedby="melding-error"></textarea>
+            <span class="field-error" id="melding-error" aria-live="polite"></span>
+          </label>
+          <button type="submit" class="btn btn-dark btn-lg btn-submit">Send melding</button>
+          <p class="form-status" data-form-status aria-live="polite">Meldingen åpnes i e-postprogrammet ditt, klar til å sendes. Vi lagrer ingenting på nettsiden.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="presse" class="section section-stack section-gap-22" data-reveal>
+    <div class="grid-2">
+      <div class="glass box">
+        <span class="mono-tag">PRESSE</span>
+        <h3>Er du journalist?</h3>
+        <p>Vi stiller gjerne opp med fagfolk om drukningsforebygging, isvett, badevakter og trygghet i vann. Velg «Presse» i skjemaet, så kommer henvendelsen raskt til riktig person.</p>
+        <a href="/kontakt/?emne=presse#innhold" class="card-more">Send pressehenvendelse →</a>
+      </div>
+      <div class="glass box">
+        <span class="mono-tag">I SOSIALE MEDIER</span>
+        <h3>Følg oss</h3>
+        <p>Råd, nyheter og glimt fra klubbene og strandtjenesten.</p>
+        <div class="cta-row">
+          <a href="https://www.facebook.com/norgeslivredningsselskap/" class="btn btn-light btn-sm" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/norgeslivredningsselskap/" class="btn btn-light btn-sm" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/channel/UCrJ9Nnmt-geTGgbTjWLXfXg" class="btn btn-light btn-sm" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>

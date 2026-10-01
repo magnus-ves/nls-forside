@@ -1,3 +1,30 @@
+# Norges Livredningsselskap — nettside
+
+Statisk nettside (HTML/CSS/JS, ingen rammeverk) som publiseres fra `site/` på Vercel.
+
+## Slik er det bygget
+
+- `src/pages/` — innholdet på hver side. Første linje er en JSON-kommentar med tittel, beskrivelse, aktiv menyknapp og brødsmuler.
+- `tools/build.mjs` — pakker hver side inn i felles toppbar, meny og footer og skriver ferdig HTML til `site/`.
+- `site/assets/nls.css` og `nls.js` — felles design og funksjoner (meny, kurskalender, FAQ-søk, steg-guide, kontaktskjema, klubbfinner).
+- `site/livredningsplakat/` — plakatgeneratorens egne stiler og skript.
+
+Etter at du har endret noe i `src/pages/`, kjør:
+
+```
+node tools/build.mjs
+```
+
+og commit både `src/` og `site/`. Vercel serverer `site/` direkte.
+
+## Må fylles inn før lansering
+
+- E-postadressen kontaktskjemaet sender til (`CONTACT_EMAIL` øverst i `site/assets/nls.js`).
+- Den ekte kurskalenderen (`COURSES` i samme fil — dagens liste er eksempeldata fra designet).
+- Betalingsløsning for gaver (i dag går «Gi din gave» til kontaktskjemaet).
+
+---
+
 # CODING AGENTS: READ THIS FIRST
 
 This is a **handoff bundle** from Claude Design (claude.ai/design).
