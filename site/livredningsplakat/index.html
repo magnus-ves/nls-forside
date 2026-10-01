@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Livredningsplakat · Norges Livredningsselskap</title>
+<meta name="description" content="Lag en utskriftsklar A4-plakat som viser hvordan man berger liv i vann på ditt badested.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="plakat.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <img class="topbar-logo" src="https://static.wixstatic.com/media/c68629_5278ddd3acd14657bb720ab775a6f65f~mv2.png/v1/fill/w_68,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c68629_5278ddd3acd14657bb720ab775a6f65f~mv2.png" alt="Norges Livredningsselskap">
+    <a class="topbar-back" href="../">← Tilbake til livredning.no</a>
+    <span class="topbar-label">PLAKATGENERATOR · REDD LIV I VANN</span>
+  </div>
+</header>
+
+<main class="workspace">
+
+  <form class="panel" id="poster-form" autocomplete="off">
+    <h1 class="panel-title">Lag din livredningsplakat</h1>
+    <p class="panel-lead">Fyll inn stedet, se plakaten oppdatere seg, og skriv den ut i A4.</p>
+
+    <label class="field">
+      <span class="field-label">Sted</span>
+      <input type="text" name="sted" maxlength="48" value="Sandvika badeplass" placeholder="F.eks. Sandvika badeplass">
+    </label>
+
+    <label class="field">
+      <span class="field-label">Adresse og plassering av utstyr</span>
+      <textarea name="adresse" rows="3" maxlength="120" placeholder="F.eks. Kadettangen 2, Bærum — livbøyestativ ved badetrappen">Kadettangen 2, Bærum — livbøyestativ ved badetrappen</textarea>
+    </label>
+
+    <div class="panel-actions">
+      <button type="button" class="btn btn-primary" id="print-btn">Skriv ut / lagre som PDF</button>
+      <button type="button" class="btn btn-ghost" id="share-btn">Kopier lenke</button>
+    </div>
+    <p class="panel-hint" id="share-status" aria-live="polite"></p>
+  </form>
+
+  <div class="desk" id="desk">
+    <div class="poster-frame" id="poster-frame">
+      <section class="poster" id="poster" aria-label="Forhåndsvisning av plakat">
+
+        <div class="poster-head">
+          <div class="poster-brand">
+            <img src="https://static.wixstatic.com/media/c68629_5278ddd3acd14657bb720ab775a6f65f~mv2.png/v1/fill/w_68,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c68629_5278ddd3acd14657bb720ab775a6f65f~mv2.png" alt="">
+            <span>NORGES LIVREDNINGSSELSKAP</span>
+          </div>
+          <h2 class="poster-title">Berg liv i vann</h2>
+          <div class="poster-place">
+            <span class="poster-place-label">STED</span>
+            <span class="poster-place-name" data-bind="sted">Sandvika badeplass</span>
+          </div>
+          <span class="poster-address" data-bind="adresse">Kadettangen 2, Bærum — livbøyestativ ved badetrappen</span>
+        </div>
+
+        <div class="poster-body">
+          <span class="poster-eyebrow">GJØR DETTE — I DENNE REKKEFØLGEN</span>
+
+          <ol class="steps">
+            <li class="step">
+              <div class="step-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#002b45" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 11v2a1 1 0 0 0 1 1h2l3 3V7L6 10H4a1 1 0 0 0-1 1z"/>
+                  <path d="M15 8a4 4 0 0 1 0 8"/><path d="M18 5.5a8 8 0 0 1 0 13"/>
+                </svg>
+              </div>
+              <div class="step-text">
+                <span class="step-title">1. Rop og varsle</span>
+                <span class="step-desc">Rop høyt, tilkall andre, og be en om å ringe 113 mens du handler.</span>
+              </div>
+            </li>
+
+            <li class="step">
+              <div class="step-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#002b45" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20l7-7"/><path d="M14 3l7 7-9 9-4-4z"/><path d="M11.5 5.5l4 4"/>
+                </svg>
+              </div>
+              <div class="step-text">
+                <span class="step-title">2. Rekk ut noe fra land</span>
+                <span class="step-desc">Bruk livredningsstang, padle, gren eller klesplagg. Gå aldri selv ut i vannet.</span>
+              </div>
+            </li>
+
+            <li class="step">
+              <div class="step-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#002b45" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.6"/>
+                  <path d="M12 5v2M12 17v2M5 12h2M17 12h2"/>
+                  <path d="M4 4l14 16"/>
+                </svg>
+              </div>
+              <div class="step-text">
+                <span class="step-title">3. Kast livbøyen</span>
+                <span class="step-desc">Ta livbøyen fra stativet, hold i linen, og kast forbi personen så vinden/strømmen driver den inn.</span>
+              </div>
+            </li>
+
+            <li class="step">
+              <div class="step-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#002b45" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 17c1.5 1.3 3 1.3 4.5 0s3-1.3 4.5 0 3 1.3 4.5 0 3-1.3 4.5 0"/>
+                  <path d="M6 14l1-6h6l3 6"/><path d="M9 8V5h3v3"/>
+                </svg>
+              </div>
+              <div class="step-text">
+                <span class="step-title">4. Ro eller vad ut om nødvendig</span>
+                <span class="step-desc">Er det båt tilgjengelig, bruk den. Gå aldri lenger ut enn du selv kan stå trygt.</span>
+              </div>
+            </li>
+
+            <li class="step">
+              <div class="step-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#002b45" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4l4 1 1 3-2 2c1 3 3 5 6 6l2-2 3 1 1 4c-8 1-15-6-15-15z"/>
+                </svg>
+              </div>
+              <div class="step-text">
+                <span class="step-title">5. Ring 113</span>
+                <span class="step-desc">Gi tydelig stedsangivelse. Start gjenoppliving hvis personen ikke svarer eller puster.</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="poster-foot">
+          <div class="poster-foot-row">
+            <div class="gear">
+              <div class="gear-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#002b45" stroke-width="1.6"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.4"/><path d="M12 5v2M12 17v2M5 12h2M17 12h2"/></svg>
+                <span>Livbøye</span>
+              </div>
+              <div class="gear-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#002b45" stroke-width="1.6"><path d="M4 20L18 6"/><circle cx="19" cy="5" r="1.4" fill="#002b45" stroke="none"/><path d="M4 20c2-1 3-3 2-6"/></svg>
+                <span>Kasteline</span>
+              </div>
+              <div class="gear-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#002b45" stroke-width="1.6"><path d="M12 3v14"/><path d="M8 6l4-3 4 3"/><path d="M6 21l6-4 6 4"/></svg>
+                <span>Livredningsstang</span>
+              </div>
+            </div>
+            <div class="numbers">
+              <span class="number">MEDISINSK NØDHJELP 113</span>
+              <span class="number">SJØ OG VANN 120</span>
+            </div>
+          </div>
+          <div class="poster-colophon">
+            <span>Norges Livredningsselskap · livredning.no</span>
+            <span>Stiftet 1906</span>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+</main>
+
+<script src="plakat.js"></script>
+</body>
+</html>
